@@ -1,3 +1,6 @@
+h2{
+	padding-bottom: 2rem;
+}
 div,nav,.container,.container-fluid,a.navbar-brand,a.nav-link,.fa-facebook,.fa-instagram,.fa-twitter{
 	background-color: black;
 	color: #FCCC1A;
@@ -35,20 +38,10 @@ a.nav-link:hover,a.navbar-brand:hover,a.fa-facebook:hover,a.fa-instagram:hover,a
 width: 2em;
 height: auto;
 }
-#about{
-padding-top: 50px;
-padding-bottom: 50px;
-}
 #carouselmain{
 	max-height: 500px;
 }
 #rsocialmedia{
 	padding-top: 25px;
 	list-style: none;
-}
-#rfooter{
-	padding-top:50px;
-}
-#testimonials{
-	padding-top:50px;
 }
