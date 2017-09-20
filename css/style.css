@@ -1,3 +1,9 @@
+hr.r-hr{
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top: 1px solid rgba(255, 255, 255, 1);
+}
 h2{
 	padding-bottom: 2rem;
 }
