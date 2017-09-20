@@ -1,0 +1,54 @@
+div,nav,.container,.container-fluid,a.navbar-brand,a.nav-link,.fa-facebook,.fa-instagram,.fa-twitter{
+	background-color: black;
+	color: #FCCC1A;
+}
+a.nav-link:hover,a.navbar-brand:hover,a.fa-facebook:hover,a.fa-instagram:hover,a.fa-twitter:hover{
+	color: white;
+	text-decoration: none;
+}
+.nav-item{
+	text-align: center;
+	}
+.carousel-item{
+  max-height: 500px;
+}
+.card img{
+	max-height: 200px;
+}
+.card{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.img-thumbnail{
+	height: 120px;
+	width: 120px;
+}
+.navbar-brand{
+	width: 75%;
+	margin: 0 !important;
+}
+#carouselmain img{
+	width: 100% !important;
+	height: 100% !important;
+}
+#logo{
+width: 2em;
+height: auto;
+}
+#about{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+#carouselmain{
+	max-height: 500px;
+}
+#rsocialmedia{
+	padding-top: 25px;
+	list-style: none;
+}
+#rfooter{
+	padding-top:50px;
+}
+#testimonials{
+	padding-top:50px;
+}
