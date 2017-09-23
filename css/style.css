@@ -38,7 +38,7 @@ a.nav-link:hover,a.navbar-brand:hover,a.fa-facebook:hover,a.fa-instagram:hover,a
 .social-links:hover,.social-links:focus{
 	color: white;
 }
-#carouselmain img{
+#home img{
 	width: 100% !important;
 	height: 100% !important;
 }
@@ -46,10 +46,10 @@ a.nav-link:hover,a.navbar-brand:hover,a.fa-facebook:hover,a.fa-instagram:hover,a
 width: 2em;
 height: auto;
 }
-#carouselmain{
+#home{
 	max-height: 500px;
 }
-#rfooter div{
+#contact-us div{
 	background-color: #FCCC1A;
 	color: black;
 }
