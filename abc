@@ -1,0 +1,53 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+	$("document").ready(function(){
+		$(".btn").on("click",makereq);
+
+		function makereq(){
+			 	httpReq = new XMLHttprequest();
+				httpReq.onreadystatechange = showQuote;
+					httpReq.open('GET','https://gist.github.com/dmakk767/9375ff01aff76f1788aead1df9a66338#file-quotes-json',true);
+					httpReq.send();
+		}
+
+		function showQuote(){
+			if(XMLHttpRequest.Done == httpReq.readyState)
+				if(httpReq.status >= 200 && httpReq.status < 400){
+					var data = JSON.parse(httpReq.responseText);
+					getQuote(data);
+				}
+		}
+		function getQuote(data){
+			var rn = 1 + (int)Math.random()*20;
+			var quote = data[rn].quote;
+			var author = data[rn].name;
+			$("h1").html('"'+quote+'"'+'<br><small>-'+author+'</small>');
+		}
+
+	});
+</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center pt-5">
+			<h1 class="p-5" style="height:300px;">New Quotes Here</h1>
+			<button class="btn btn-long btn-primary" name="button">New Quote</button>
+			<br>
+			<a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
